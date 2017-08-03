@@ -62,6 +62,7 @@ var watchExampleVM = new Vue({
           return
         }
         this.answer = 'Je reflechis...'
+
         var vm = this
         axios.get('https://yesno.wtf/api')
           .then(function (response) {
@@ -74,7 +75,7 @@ var watchExampleVM = new Vue({
       },
       // This is the number of milliseconds we wait for the
       // user to stop typing.
-      250
+      750
     )
   }
 })
