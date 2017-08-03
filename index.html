@@ -12,17 +12,17 @@
 </head>
 <body>
 
-  <div id="app">
+  <div id="hello">
     <h1>{{ greeting }}</h1>
     <img :src="img">
-
   </div>
+
   <div id="momgetthecamera">
     <button @click="show = !show">
       Clique !
     </button>
     <transition name="slide-fade">
-      <p v-if="show">Ca glisse ! >:( </p>
+      <p v-if="show"><img src="img/dino.jpg"> </p>
     </transition>
   </div>
 
@@ -38,14 +38,13 @@
     <h2 class="welcometoPonyland"><img class="magicalunicorn" src="img/rainbow.png"> Bienvenue sur la div de la licorne magique<img class="magicalunicorn" src="img/rainbowflip.png"> </h2>
     <div id="magique" v-bind:style="answerImg">
       <p>
-        Pose une question a la licorne magique ! <br />
+        Pose une question a la licorne magique ! </p><br />
         <input class="AMA" v-model="question">
-      </p>
-
-        <p> Jean Celestin la licorne dit : <p class="response"> {{ answer }}</p></p>
+          <p> Jean Eudes la licorne dit : </p><p class="response"> {{ answer }}</p>
       </div>
-  </div>
-</div>
+    </div>
+
 <script type="text/javascript" src="js/js.js"></script>
+
 </body>
 </html>

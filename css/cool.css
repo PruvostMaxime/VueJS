@@ -89,3 +89,7 @@ text-decoration: underline;
   text-decoration: underline;
   animation: rainbow 0.45s infinite;
 }
+
+#unicorn {
+  background-color: red;
+}

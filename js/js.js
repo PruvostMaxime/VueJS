@@ -1,10 +1,10 @@
 // First Words
 
-  new Vue({
-      el: '#app',
+  var firstwords = new Vue({
+      el: '#hello',
       data: {
         greeting: ' Hello World ! ',
-        img: 'img/index2.png'
+        img: 'img/index2.png',
       }
     })
 
@@ -75,7 +75,15 @@ var watchExampleVM = new Vue({
       },
       // This is the number of milliseconds we wait for the
       // user to stop typing.
-      750
-    )
+      750 )
   }
 })
+
+// Name the unicorn
+
+// Vue.component('Unicorn', {
+//   name: 'Bob',
+// })
+// new Vue({
+//   el: '#unicorn'
+// })
