@@ -1,0 +1,81 @@
+body {
+  text-align:center;
+  background-color: #15FC67;
+}
+h1 {
+animation: rainbow 1.7s infinite;
+font-size: 50px;
+text-decoration: underline;
+
+}
+.swagg {
+  animation: rainbow 0.7s infinite;
+}
+
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+#MAGIC8BALL {
+  background-image: url(img/licorne.png);
+  background-color: white;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 25px;
+
+}
+
+#magique {
+  height: 280px;
+  width: 50%;
+  background-color: PINK;
+  border: 3px solid black;
+  border-radius: 20px;
+  position: absolute;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.response {
+  color: red;
+  font-size: 25px;
+}
+
+.AMA {
+  border-radius: 15px;
+}
+
+.MAGIC8BALL {
+  background-color: white;
+  height: 220px;
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+.pancakes {
+  text-decoration: underline;
+}
