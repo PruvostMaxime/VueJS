@@ -35,7 +35,7 @@ text-decoration: underline;
 }
 
 #MAGIC8BALL {
-  background-image: url(img/licorne.png);
+  background-image: url(../img/licorne.png);
   background-color: white;
   background-position: right;
   background-repeat: no-repeat;
