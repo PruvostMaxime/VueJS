@@ -27,21 +27,23 @@
   </div>
 
 
-<div class="MAGIC8BALL" id="JeanKevin">
-  <p class="pancakes"> La machine a inverser le texte </p>
-  <p class="swagg"> Message : {{ message }} </p>
-  <p class="swagg"> Ton message a l'envers xdptdr : {{ reversedMessage }} </p>
-  <input v-model="message" placeholder="Ecris un truc !">
-</div>
+  <div class="MAGIC8BALL" id="JeanKevin">
+    <p class="pancakes"> La machine a inverser le texte </p>
+    <p class="swagg"> Message : {{ message }} </p>
+    <p class="swagg"> Ton message a l'envers xdptdr : {{ reversedMessage }} </p>
+    <input v-model="message" placeholder="Ecris un truc !">
+  </div>
 
-<div id="MAGIC8BALL">
-  <h2> Bienvenue sur la div de la licorne magique </h2>
-  <div id="magique" v-bind:style="answerImg">
-    <p>
-      Pose une question a la licorne magique ! <br />
-      <input class="AMA" v-model="question">
-    </p>
-    <p class="note"> Jean Celestin la licorne dit :<p class="response"> {{ answer }}</p></p>
+  <div id="MAGIC8BALL">
+    <h2 class="welcometoPonyland"><img class="magicalunicorn" src="img/rainbow.png"> Bienvenue sur la div de la licorne magique<img class="magicalunicorn" src="img/rainbowflip.png"> </h2>
+    <div id="magique" v-bind:style="answerImg">
+      <p>
+        Pose une question a la licorne magique ! <br />
+        <input class="AMA" v-model="question">
+      </p>
+
+        <p> Jean Celestin la licorne dit : <p class="response"> {{ answer }}</p></p>
+      </div>
   </div>
 </div>
 <script type="text/javascript" src="js/js.js"></script>

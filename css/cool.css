@@ -47,9 +47,9 @@ text-decoration: underline;
 }
 
 #magique {
-  height: 280px;
+  height: 275px;
   width: 50%;
-  background-color: PINK;
+  background-color: pink;
   border: 3px solid black;
   border-radius: 20px;
   position: absolute;
@@ -78,4 +78,14 @@ text-decoration: underline;
 
 .pancakes {
   text-decoration: underline;
+}
+
+.magicalunicorn {
+  height: 25px;
+  width: 25px;
+}
+
+.welcometoPonyland{
+  text-decoration: underline;
+  animation: rainbow 0.45s infinite;
 }
