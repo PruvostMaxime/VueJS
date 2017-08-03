@@ -54,7 +54,7 @@ var watchExampleVM = new Vue({
     getAnswer: _.debounce(
       function () {
         if (this.question == ''){
-          this.answer = 'Demande moi tout ! \\(^-^)/';
+          this.answer = 'Pose moi une question ! \\(^-^)/';
           return;
         }
           else if (this.question.indexOf('?') === -1) {
