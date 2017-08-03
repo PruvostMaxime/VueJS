@@ -31,15 +31,16 @@
 
 // La licorne magique !
 
-var watchExampleVM = new Vue({
+var unicorn = new Vue({
   el: '#MAGIC8BALL',
   data: {
     question: '',
     answer: 'J\'ai des pouvoirs magique,mais je peux pas deviner ta question !',
     isAnswered: false,
     answerImg: {
-    backgroundImage: ''
-  },
+    	backgroundImage: '',
+  	},
+    name: 'JeanKevin',
   },
   watch: {
     // whenever question changes, this function will run
@@ -78,12 +79,3 @@ var watchExampleVM = new Vue({
       750 )
   }
 })
-
-// Name the unicorn
-
-// Vue.component('Unicorn', {
-//   name: 'Bob',
-// })
-// new Vue({
-//   el: '#unicorn'
-// })
