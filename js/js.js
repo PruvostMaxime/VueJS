@@ -35,7 +35,7 @@ var watchExampleVM = new Vue({
   el: '#MAGIC8BALL',
   data: {
     question: '',
-    answer: 'J\'ai des pouvoirs magique,mais je peut pas deviner ta question !',
+    answer: 'J\'ai des pouvoirs magique,mais je peux pas deviner ta question !',
     isAnswered: false,
     answerImg: {
     backgroundImage: ''
@@ -44,7 +44,7 @@ var watchExampleVM = new Vue({
   watch: {
     // whenever question changes, this function will run
     question: function (newQuestion) {
-      this.answer = 'J\'attend...'
+      this.answer = 'J\'attends...'
       this.isAnswered = false;
       this.answerImg.backgroundImage = '';
       this.getAnswer()
@@ -53,8 +53,12 @@ var watchExampleVM = new Vue({
   methods: {
     getAnswer: _.debounce(
       function () {
-        if (this.question.indexOf('?') === -1) {
-          this.answer = 'Une question a un point d\'interrogation... ;-)'
+        if (this.question == ''){
+          this.answer = 'Demande moi tout ! \\(^-^)/';
+          return;
+        }
+          else if (this.question.indexOf('?') === -1) {
+          this.answer = 'Une question a un point d\'interrogation... :('
           return
         }
         this.answer = 'Je reflechis...'
@@ -65,7 +69,7 @@ var watchExampleVM = new Vue({
             vm.answerImg.backgroundImage = 'url(' + response.data.image + ')';
           })
           .catch(function (error) {
-            vm.answer = 'Mes pouvoirs ont disparu.. :( ' + error
+            vm.answer = 'Mes pouvoirs ont disparus.. :( ' + error
           })
       },
       // This is the number of milliseconds we wait for the
